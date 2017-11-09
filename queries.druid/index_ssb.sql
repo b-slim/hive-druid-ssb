@@ -1,6 +1,6 @@
 set hive.druid.metadata.username=${DRUID_USERNAME};
 set hive.druid.metadata.password=${DRUID_PASSWORD};
-set hive.druid.metadata.uri=jdbc:mysql://${DRUID_HOST}/druid;
+set hive.druid.metadata.uri=jdbc:mysql://${DRUID_METADATA_STORAGE_HOST}/druid;
 set hive.druid.indexer.partition.size.max=1000000;
 set hive.druid.indexer.memory.rownum.max=100000;
 set hive.druid.broker.address.default=${DRUID_HOST}:8082;
